@@ -13,7 +13,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.quit()
 
     def check_for_row_in_list_table(self, row_text):
-        table = self.browser.find_element_by_id('id_lsit_table')
+        table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertIn(row_text, [row.text for row in rows])
 
@@ -61,7 +61,7 @@ class NewVisitorTest(unittest.TestCase):
         # 페이지는 다시 갱신되고, 두 개 아이템이 목록에 보인다
         self.check_for_row_in_list_table('1: Buy peacock feathers')
         self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
-        
+
         # 에디스는 사이트가 입력한 목록을 저장하고 있는지 궁금하다
         # 사이트는 그녀를 위한 특정 URL을 생성해준다
         # 이때 URL에 대한 설명도 함께 제공된다
