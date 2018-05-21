@@ -106,7 +106,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         # 프란시스가 새로운 작업 아이템을 입력하기 시작한다
         # 그는 에디스보다 재미가 없다
-        inputbox = self.borwser.find_element_by_id('id_new_item')
+        inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Buy milk')
         inputbox.send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy milk')
