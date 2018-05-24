@@ -59,7 +59,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
         )
 
     def test_can_start_a_list_and_retrieve_it_later(self):
-        #  에디스(Edith)는 멋진 작업 목록 온라인 앱이 나왔다는 소식을 듣고
+        # 에디스(Edith)는 멋진 작업 목록 온라인 앱이 나왔다는 소식을 듣고
         # 해당 웹 사이트를 확인하러 간다
         self.browser.get(self.live_server_url)
 
